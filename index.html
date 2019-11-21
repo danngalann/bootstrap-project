@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pt3</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <!-- Navigation -->
+    <section>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#opinions" class="nav-link">Opinions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- Banner -->
+    <section>           
+        <div class="video-container">
+            <video src="media/hero-bg.mp4" loop autoplay muted></video>
+            <div class="jumbotron d-flex align-items-center">
+                <div class="container text-center text-white rellax" data-rellax-speed="-4">
+                    <h1 class="display-4">This is a great title!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tenetur!</p>
+                    <button class="btn btn-outline-success btn-lg">Buy</button>
+                    <button class="btn btn-outline-light btn-lg">Try</button>
+                </div>            
+            </div>
+        </div>
+    </section>
+    <!-- Features -->
+    <section id="features">
+        <div class="container">
+            <h2 class="border-bottom font-weight-light">Features</h2>
+            <!-- Feature list -->
+            <div>
+                <div class="row feature-row fade" data-fade-speed="1s">
+                    <div class="col col-md-7 col-sm-12">
+                        <h3 class="text-center"> This is a column</h3>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem, voluptas possimus id beatae animi, in quia assumenda alias eos, nulla nobis. Similique, voluptatibus! Nobis nulla mollitia doloremque laboriosam ipsam.</p>
+                    </div>
+                    <div class="col col-md-5 col-sm-12">
+                        <i class="fas fa-mobile-alt feature-icon text-center rellax" data-rellax-speed="-1"></i>
+                    </div>
+                </div>
+                <div class="row feature-row fade" data-fade-speed="1s">
+                    <div class="col col-md-5 col-sm-12">
+                        <i class="far fa-paper-plane feature-icon text-center rellax" data-rellax-speed="-1"></i>
+                    </div>
+                    <div class="col col-md-7 col-sm-12">
+                        <h3 class="text-center">This is a column</h3>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem, voluptas possimus id beatae animi, in quia assumenda alias eos, nulla nobis. Similique, voluptatibus! Nobis nulla mollitia doloremque laboriosam ipsam.</p>
+                    </div>
+                </div>
+                <div class="row feature-row fade" data-fade-speed="1s">
+                    <div class="col col-md-7 col-sm-12">
+                        <h3 class="text-center">This is a column</h3>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem, voluptas possimus id beatae animi, in quia assumenda alias eos, nulla nobis. Similique, voluptatibus! Nobis nulla mollitia doloremque laboriosam ipsam.</p>
+                    </div>
+                    <div class="col col-md-5 col-sm-12">
+                        <i class="fas fa-cocktail feature-icon text-center rellax" data-rellax-speed="1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery -->
+    <section id="gallery">
+        <!-- De acuerdo al enunciado, la galería debería ser container-fluid, pero no me gusta cómo queda -->
+        <div class="container fade" data-fade-speed="1s">
+            <div id="gallery">
+                <h2 class="border-bottom font-weight-light">Gallery</h2>
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carousel1.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel2.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel3.jpg" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+            </div>
+        </div>
+    </section>    
+    <!-- Opinions -->
+    <section id="opinions">
+        <div class="container fade" data-fade-speed="1s">
+            <div id="opinions">
+                <h2 class="border-bottom font-weight-light">Opinions</h2>
+                <div class="row">
+                    <div class="col col-md-4 col-sm-12">
+                        <div class="text-center">
+                                <img src="https://source.unsplash.com/collection/895539" class="opinion-image">
+                        </div>                        
+                        <blockquote class="blockquote">
+                            <p class="mb-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer text-center">Someone famous</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col col-md-4 col-sm-12">
+                        <div class="text-center">
+                                <img src="https://source.unsplash.com/collection/1194" class="opinion-image">
+                        </div>                        
+                        <blockquote class="blockquote">
+                            <p class="mb-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer text-center">Someone famous</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col col-md-4 col-sm-12">
+                        <div class="text-center">
+                                <img src="https://source.unsplash.com/collection/1301528" class="opinion-image">
+                        </div>                        
+                        <blockquote class="blockquote">
+                            <p class="mb-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer text-center">Someone famous</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container fade" data-fade-speed="1s">
+            <div id="contact">
+                <h2 class="border-bottom font-weight-light">Contact</h2>
+                <div class="row">
+                    <div class="col col-lg-4 col-sm-12 text-center d-flex flex-column justify-content-center">
+                        <div id="contact-icon">
+                            <a href="tel:+346985143" data-toggle="tooltip" data-placement="right" title="Click to call"><i class="fas fa-phone text-dark"></i></a>
+                        </div>                        
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, temporibus!</p>
+                        <address>
+                            <p><a href="mailto:daniel_galannavio@iescarlesvallbona.cat?subject:Pt3">daniel_galannavio@iescarlesvallbona.cat</a></p> 
+                            <p>1469 Twin Oaks Drive, Kentwood, MI 49512</p>
+                        </address>
+                    </div>
+                    <div class="col col-lg-8 col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="name" class="required">Name</label>
+                                <input class="form-control" type="text" name="name" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="required">Email</label>
+                                <input class="form-control" type="email" name="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="web">Web</label>
+                                <input class="form-control" type="url" name="web" id="web">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="required">Message</label>
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark d-flex align-items-center">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col col-lg-6 col-sm-12">
+                    <ul class="d-flex justify-content-center text-light">
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-youtube"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-discord"></i></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-6 col-sm-12 text-light">
+                    <p>&copy; danngalann 2019.</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating button -->
+    <button id="goup" class="btn" title="Go up">
+        <a href="#"><i class="fas fa-arrow-up text-light"></i></a>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/b40fc95306.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/dannUtils.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+    <script>
+        // Inicialize Fader Object
+        const fader = new Fader();
+        fader.init();
+
+        // Inicialize rellax Object
+        var rellax = new Rellax('.rellax');
+
+        // Enable tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
