@@ -10,4 +10,4 @@ Started as a simple school project but I got too exited.
 
 [Online Demo](https://danngalann.github.io/bootstrap-project/)
 
-Note: Designed for desktop only. Responsiveness is poor.
+Note: Designed for desktop only.
